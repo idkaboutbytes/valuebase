@@ -1,0 +1,33 @@
+name = "idkaboutbytes/valuebase"
+version = "1.0.0"
+description = "ValueBase package for Roblox."
+license = "MIT"
+authors = ["idkaboutbytes"]
+repository = "https://github.com/idkaboutbytes/valuebase"
+includes = [
+    "pesde.toml",
+    "README.md",
+    "CHANGELOG.md",
+    "default.project.json",
+    "src/**/*.luau",
+]
+
+[target]
+environment = "roblox"
+lib = "src/init.luau"
+build_files = ["src"]
+
+[wally_indices]
+default = "https://github.com/UpliftGames/wally-index"
+
+[dependencies]
+ValueBaseUtils = { repo = "idkaboutbytes/valuebaseutils", rev = "v1.0.0" }
+RxValueBaseUtils = { repo = "idkaboutbytes/rxvaluebaseutils", rev = "v1.0.0" }
+Observable = { repo = "idkaboutbytes/observable", rev = "v1.0.0" }
+RxSignal = { repo = "idkaboutbytes/rxsignal", rev = "v1.0.0" }
+RxBrioUtils = { repo = "idkaboutbytes/rxbrioutils", rev = "v1.0.0" }
+Brio = { repo = "idkaboutbytes/brio", rev = "v1.0.0" }
+Promise = { repo = "idkaboutbytes/Promise", rev = "v1.0.0" }
+Rx = { repo = "idkaboutbytes/rx", rev = "v1.0.0" }
+Loader = { repo = "idkaboutbytes/loader", rev = "v1.0.0" }
+RxInstanceUtils = { repo = "idkaboutbytes/rxinstanceutils", rev = "v1.0.0" }
